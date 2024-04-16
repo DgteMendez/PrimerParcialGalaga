@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PrimerParcialGalaga",
+			"Path": "C:\\Users\\VICTUS hp\\Documents\\Unreal Projects\\PrimerParcialGalaga\\Source\\PrimerParcialGalaga.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PrimerParcialGalagaEditor",
+			"Path": "C:\\Users\\VICTUS hp\\Documents\\Unreal Projects\\PrimerParcialGalaga\\Source\\PrimerParcialGalagaEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
