@@ -20,6 +20,12 @@ class APrimerParcialGalagaGameMode : public AGameModeBase
 public:
 	APrimerParcialGalagaGameMode();
 
+private:
+	
+	class ATallerReparacionesBuilder* TallerReparacionesBuilder;
+	class ACuartoCapsularBuilder* CuartoCapsularBuilder;
+	class AIngenieroEstelar* Ingeniero;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -36,6 +42,3 @@ public:
 private:
 	virtual void Tick(float DeltaTime) override;
 };
-
-
-

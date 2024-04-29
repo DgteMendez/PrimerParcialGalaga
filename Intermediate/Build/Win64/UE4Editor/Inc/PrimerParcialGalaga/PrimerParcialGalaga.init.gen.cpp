@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodePrimerParcialGalaga_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x897315EB,
-				0x12A4F9DB,
+				0x17BEAEBD,
+				0x3EF802EC,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

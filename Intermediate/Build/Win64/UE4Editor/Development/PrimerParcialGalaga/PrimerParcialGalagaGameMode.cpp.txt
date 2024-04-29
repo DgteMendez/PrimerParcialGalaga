@@ -25,3 +25,15 @@ C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerPa
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\Proyectil.generated.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\NaveAmiga.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\NaveAmiga.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\TallerReparacionesBuilder.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\EstelarBuilder.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\EstelarBuilder.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\TallerReparacionesBuilder.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\CuartoCapsularBuilder.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CuartoCapsularBuilder.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\IngenieroEstelar.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\IngenieroEstelar.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\Estancia.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\CentroEstelar.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CentroEstelar.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\Estancia.generated.h

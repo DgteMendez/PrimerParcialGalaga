@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PrimerParcialGalaga.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6B45D1D5-79F6-4049-BA25-9F7D5ADCCE75}</UniqueIdentifier>
+      <UniqueIdentifier>{4BDAB483-B8FE-4FC1-9C0D-9ACAB4ACF860}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PrimerParcialGalaga.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\PrimerParcialGalagaEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A876E802-7089-4D0C-8613-0CA0C766B838}</UniqueIdentifier>
+      <UniqueIdentifier>{8A966A96-79FC-4B21-9911-63E882782059}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PrimerParcialGalaga">
-      <UniqueIdentifier>{AE64EAB3-9A8C-4901-BAE1-15D4CF3F9881}</UniqueIdentifier>
+      <UniqueIdentifier>{25D25684-E100-477A-B544-A1CC75CFC4F0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PrimerParcialGalaga\Bomba.cpp">
       <Filter>Source\PrimerParcialGalaga</Filter>
@@ -38,10 +40,52 @@
     <ClInclude Include="..\..\Source\PrimerParcialGalaga\Bomba.h">
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\CentroEstelar.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\CentroEstelar.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PrimerParcialGalaga\ComponenteMovimiento.cpp">
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PrimerParcialGalaga\ComponenteMovimiento.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\CuartoCapsularBuilder.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\CuartoCapsularBuilder.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\Estancia.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\Estancia.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\EstelarBuilder.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\EstelarBuilder.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\FortalezaBuilder.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\FortalezaBuilder.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\FortalezaEstelar.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\FortalezaEstelar.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\IngenieroEstelar.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\IngenieroEstelar.h">
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PrimerParcialGalaga\NaveAmiga.cpp">
@@ -99,6 +143,12 @@
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PrimerParcialGalaga\Proyectil.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\TallerReparacionesBuilder.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\TallerReparacionesBuilder.h">
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClInclude>
   </ItemGroup>

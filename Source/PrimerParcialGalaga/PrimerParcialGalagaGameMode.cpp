@@ -7,6 +7,10 @@
 #include "NaveEnemigaTransporte.h"
 #include "Proyectil.h"
 #include "NaveAmiga.h"
+#include "TallerReparacionesBuilder.h"
+#include "CuartoCapsularBuilder.h"
+#include "IngenieroEstelar.h"
+#include "Estancia.h"
 
 APrimerParcialGalagaGameMode::APrimerParcialGalagaGameMode()
 {
@@ -18,6 +22,23 @@ APrimerParcialGalagaGameMode::APrimerParcialGalagaGameMode()
 
 void APrimerParcialGalagaGameMode::BeginPlay()
 {
+	Super::BeginPlay();
+
+	Ingeniero = GetWorld()->SpawnActor<AIngenieroEstelar>(AIngenieroEstelar::StaticClass());
+	TallerReparacionesBuilder = GetWorld()->SpawnActor<ATallerReparacionesBuilder>(ATallerReparacionesBuilder::StaticClass());
+	Ingeniero->SetEstelarBuilder(TallerReparacionesBuilder);
+	Ingeniero->ConstruirEstancia(FVector(-1500.0f, 1500.0f, 215.0f));
+	CuartoCapsularBuilder = GetWorld()->SpawnActor<ACuartoCapsularBuilder>(ACuartoCapsularBuilder::StaticClass());
+	Ingeniero->SetEstelarBuilder(CuartoCapsularBuilder);
+	Ingeniero->ConstruirEstancia(FVector(-1500.0f, 1300.0f, 215.0f));
+
+	AEstancia* Estancia = Ingeniero->GetEstancia();
+	Estancia->CaracteristicasEstancia();
+
+
+
+
+
 	FVector ubicacionInicioNavesEnemigasCaza = FVector(0.0f, -500.0f, 200.0f);
 	FRotator rotacionInicioNavesEnemigasCaza = FRotator(0.0f, 0.0f, 0.0f);
 

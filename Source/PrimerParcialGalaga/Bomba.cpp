@@ -3,11 +3,12 @@
 
 #include "Bomba.h"
 #include "NaveAmiga.h"
+#include "PrimerParcialGalagaPawn.h"
 #include "Kismet/GameplayStatics.h"
 
 ABomba::ABomba()
 {
-	velocidad = -300.0f;
+	velocidad = -250.0f;
 	PrimaryActorTick.bCanEverTick = true;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
 	ProyectilMesh->SetStaticMesh(ShipMesh.Object);
@@ -46,7 +47,7 @@ void ABomba::Explotar()
 	for (AActor* Actor : DestruirActores)
 	{
 		AActor* auxActor = Actor;
-		Actor = Cast<AActor>(Actor);
+		Actor = Cast<APrimerParcialGalagaPawn>(Actor);
 		if (Actor && Actor->GetDistanceTo(this) <= RadioExplosion)
 		{
 			Actor->Destroy();
