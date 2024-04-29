@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Inventario.h"
+#include "CapsulaVelocidad.h"
 #include "PrimerParcialGalagaPawn.generated.h"
 
 UCLASS(Blueprintable)
@@ -74,5 +76,22 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+public:
+	UPROPERTY()
+	UInventario* Inventario;
+
+	UFUNCTION()
+	void DropCapsula();
+
+	UFUNCTION()
+	void TomarCapsula(ACapsulaVelocidad* CapsulaInventario);
+
+	UFUNCTION()
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp,
+		AActor* Other, class UPrimitiveComponent* OtherComp,
+		bool bSelfMoved, FVector HitLocation, FVector
+		HitNormal, FVector NormalImpulse, const FHitResult&
+		Hit) override;
 };
 

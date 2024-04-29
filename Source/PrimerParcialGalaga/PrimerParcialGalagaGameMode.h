@@ -23,6 +23,11 @@ public:
 private:
 	
 	class ATallerReparacionesBuilder* TallerReparacionesBuilder;
+	class ATallerEscudosBuilder* TallerEscudosBuilder;
+	class ATallerMejorasSaludBuilder* TallerMejorasSaludBuilder;
+	class ATallerMejorasEnergiaBuilder* TallerMejorasEnergiaBuilder;
+	class ATallerMejorasArmasBuilder* TallerMejorasArmasBuilder;
+	class ASuperTaller* SuperTaller;
 	class ACuartoCapsularBuilder* CuartoCapsularBuilder;
 	class AIngenieroEstelar* Ingeniero;
 

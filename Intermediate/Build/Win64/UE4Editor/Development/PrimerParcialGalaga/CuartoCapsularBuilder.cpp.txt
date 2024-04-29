@@ -3,6 +3,10 @@ C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerPa
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\EstelarBuilder.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\EstelarBuilder.generated.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CuartoCapsularBuilder.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\CapsulaVelocidad.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CapsulaVelocidad.generated.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\Estancia.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\CentroEstelar.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CentroEstelar.generated.h

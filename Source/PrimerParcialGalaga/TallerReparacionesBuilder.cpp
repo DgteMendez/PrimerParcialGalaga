@@ -38,16 +38,16 @@ void ATallerReparacionesBuilder::BuildTaller()
 	Estancia->SetTaller("TallerReparaciones");
 }
 
-void ATallerReparacionesBuilder::BuildMesh()
-{
-	Estancia->MeshEdificio->SetStaticMesh(Taller);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("MeshEdificio"));
-}
-
 void ATallerReparacionesBuilder::BuildCuarto()
 {
 	/*if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTallerReparaciones():Lodging is NULL, make sure it's initialized.")); return; }
 	Estancia->SetCuarto("Cuarto");*/
+}
+
+void ATallerReparacionesBuilder::BuildMesh()
+{
+	Estancia->MeshEdificio->SetStaticMesh(Taller);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("MeshEdificio"));
 }
 
 AEstancia* ATallerReparacionesBuilder::GetEstancia()

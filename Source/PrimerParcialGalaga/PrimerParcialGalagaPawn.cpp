@@ -50,6 +50,9 @@ APrimerParcialGalagaPawn::APrimerParcialGalagaPawn()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
 	bCanFire = true;
+
+	// Inventario
+	Inventario = CreateDefaultSubobject<UInventario>(TEXT("Inventario"));
 }
 
 void APrimerParcialGalagaPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -61,6 +64,8 @@ void APrimerParcialGalagaPawn::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(FireForwardBinding);
 	PlayerInputComponent->BindAxis(FireRightBinding);
+
+	PlayerInputComponent->BindAction("DropCapsula", EInputEvent::IE_Pressed, this, &APrimerParcialGalagaPawn::DropCapsula);
 }
 
 void APrimerParcialGalagaPawn::Tick(float DeltaSeconds)
@@ -136,4 +141,39 @@ void APrimerParcialGalagaPawn::ShotTimerExpired()
 {
 	bCanFire = true;
 }
+
+void APrimerParcialGalagaPawn::DropCapsula()
+{
+	if (Inventario->CapsulasVelocidad.Num() == 0)
+	{
+		return;
+	}
+	ACapsulaVelocidad* Capsula = Inventario->CapsulasVelocidad.Last();
+	Inventario->RemoveFromInventario(Capsula);
+
+	FVector CapsulaOrigen;
+	FVector CapsulaDestino;
+	Capsula->GetActorBounds(false, CapsulaOrigen, CapsulaDestino);
+
+	FTransform ColocarUbicacion = GetTransform()+ FTransform(RootComponent->GetForwardVector()* CapsulaDestino.GetMax());
+	Capsula->Soltar(ColocarUbicacion);
+}
+
+void APrimerParcialGalagaPawn::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	ACapsulaVelocidad* CapsulaInventario = Cast<ACapsulaVelocidad>(Other);
+	if (CapsulaInventario != nullptr)
+	{
+		TomarCapsula(CapsulaInventario);
+	}
+}
+
+void APrimerParcialGalagaPawn::TomarCapsula(ACapsulaVelocidad* CapsulaInventario)
+{
+	CapsulaInventario->Levantar();
+	Inventario->AddToInventario(CapsulaInventario);
+	MoveSpeed = MoveSpeed * 1.5f;
+}
+
+
 

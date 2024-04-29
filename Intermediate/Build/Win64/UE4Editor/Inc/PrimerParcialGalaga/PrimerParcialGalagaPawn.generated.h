@@ -8,15 +8,32 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FVector;
+struct FHitResult;
+class ACapsulaVelocidad;
 #ifdef PRIMERPARCIALGALAGA_PrimerParcialGalagaPawn_generated_h
 #error "PrimerParcialGalagaPawn.generated.h already included, missing '#pragma once' in PrimerParcialGalagaPawn.h"
 #endif
 #define PRIMERPARCIALGALAGA_PrimerParcialGalagaPawn_generated_h
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_SPARSE_DATA
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_RPC_WRAPPERS
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_INCLASS_NO_PURE_DECLS \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_SPARSE_DATA
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execNotifyHit); \
+	DECLARE_FUNCTION(execTomarCapsula); \
+	DECLARE_FUNCTION(execDropCapsula);
+
+
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execNotifyHit); \
+	DECLARE_FUNCTION(execTomarCapsula); \
+	DECLARE_FUNCTION(execDropCapsula);
+
+
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPrimerParcialGalagaPawn(); \
 	friend struct Z_Construct_UClass_APrimerParcialGalagaPawn_Statics; \
@@ -25,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(APrimerParcialGalagaPawn)
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_INCLASS \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAPrimerParcialGalagaPawn(); \
 	friend struct Z_Construct_UClass_APrimerParcialGalagaPawn_Statics; \
@@ -34,7 +51,7 @@ public: \
 	DECLARE_SERIALIZER(APrimerParcialGalagaPawn)
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_STANDARD_CONSTRUCTORS \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APrimerParcialGalagaPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APrimerParcialGalagaPawn) \
@@ -47,7 +64,7 @@ private: \
 public:
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_ENHANCED_CONSTRUCTORS \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APrimerParcialGalagaPawn(APrimerParcialGalagaPawn&&); \
@@ -58,33 +75,33 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APrimerParcialGalagaPawn)
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_PRIVATE_PROPERTY_OFFSET \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ShipMeshComponent() { return STRUCT_OFFSET(APrimerParcialGalagaPawn, ShipMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(APrimerParcialGalagaPawn, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(APrimerParcialGalagaPawn, CameraBoom); }
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_9_PROLOG
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_GENERATED_BODY_LEGACY \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_11_PROLOG
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_SPARSE_DATA \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_RPC_WRAPPERS \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_INCLASS \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_STANDARD_CONSTRUCTORS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_PRIVATE_PROPERTY_OFFSET \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_SPARSE_DATA \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_RPC_WRAPPERS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_INCLASS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_GENERATED_BODY \
+#define PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_SPARSE_DATA \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_INCLASS_NO_PURE_DECLS \
-	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_12_ENHANCED_CONSTRUCTORS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_PRIVATE_PROPERTY_OFFSET \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_SPARSE_DATA \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_INCLASS_NO_PURE_DECLS \
+	PrimerParcialGalaga_Source_PrimerParcialGalaga_PrimerParcialGalagaPawn_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

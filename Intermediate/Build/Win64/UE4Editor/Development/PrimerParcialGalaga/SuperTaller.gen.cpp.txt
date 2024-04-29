@@ -1,0 +1,7 @@
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Development\PrimerParcialGalaga\Definitions.PrimerParcialGalaga.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga/SuperTaller.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\EstelarBuilder.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\EstelarBuilder.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\SuperTaller.generated.h

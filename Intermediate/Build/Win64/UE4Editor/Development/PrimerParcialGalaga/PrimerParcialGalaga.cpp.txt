@@ -1,0 +1,2 @@
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Development\PrimerParcialGalaga\Definitions.PrimerParcialGalaga.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\PrimerParcialGalaga.h
