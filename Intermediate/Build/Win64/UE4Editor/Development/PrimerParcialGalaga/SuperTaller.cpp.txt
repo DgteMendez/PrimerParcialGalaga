@@ -3,6 +3,10 @@ C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerPa
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\EstelarBuilder.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\EstelarBuilder.generated.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\SuperTaller.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\MunicionTorre.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\Proyectil.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\Proyectil.generated.h
+C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\MunicionTorre.generated.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\Estancia.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Source\PrimerParcialGalaga\CentroEstelar.h
 C:\Users\VICTUS hp\Documents\Unreal Projects\PrimerParcialGalaga\Intermediate\Build\Win64\UE4Editor\Inc\PrimerParcialGalaga\CentroEstelar.generated.h

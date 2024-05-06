@@ -9,7 +9,6 @@ ATallerEscudosBuilder::ATallerEscudosBuilder()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -43,6 +42,12 @@ void ATallerEscudosBuilder::BuildCuarto()
 {
 	/*if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTallerReparaciones():Lodging is NULL, make sure it's initialized.")); return; }
 		Estancia->SetCuarto("Cuarto");*/
+}
+
+void ATallerEscudosBuilder::BuildTorre()
+{
+	/*if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTorre():Lodging is NULL, make sure it's initialized.")); return; }
+	Estancia->SetTorre("TorreDeDefensa");*/
 }
 
 void ATallerEscudosBuilder::BuildMesh()

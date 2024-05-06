@@ -30,35 +30,42 @@ void APrimerParcialGalagaGameMode::BeginPlay()
 	Super::BeginPlay();
 
 	Ingeniero = GetWorld()->SpawnActor<AIngenieroEstelar>(AIngenieroEstelar::StaticClass());
+
 	TallerReparacionesBuilder = GetWorld()->SpawnActor<ATallerReparacionesBuilder>(ATallerReparacionesBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(TallerReparacionesBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 1500.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 1600.0f, 215.0f));
+
 	CuartoCapsularBuilder = GetWorld()->SpawnActor<ACuartoCapsularBuilder>(ACuartoCapsularBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(CuartoCapsularBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 1300.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 1200.0f, 215.0f));
+
 	TallerEscudosBuilder = GetWorld()->SpawnActor<ATallerEscudosBuilder>(ATallerEscudosBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(TallerEscudosBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 1100.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 800.0f, 215.0f));
+
 	TallerMejorasSaludBuilder = GetWorld()->SpawnActor<ATallerMejorasSaludBuilder>(ATallerMejorasSaludBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(TallerMejorasSaludBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 900.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 400.0f, 215.0f));
+
 	TallerMejorasEnergiaBuilder = GetWorld()->SpawnActor<ATallerMejorasEnergiaBuilder>(ATallerMejorasEnergiaBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(TallerMejorasEnergiaBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1300.0f, 700.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, 0.0f, 215.0f));
+
 	TallerMejorasArmasBuilder = GetWorld()->SpawnActor<ATallerMejorasArmasBuilder>(ATallerMejorasArmasBuilder::StaticClass());
 	Ingeniero->SetEstelarBuilder(TallerMejorasArmasBuilder);
-	Ingeniero->ConstruirEstancia(FVector(-1500.0f, 700.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, -400.0f, 215.0f));
+
 	SuperTaller = GetWorld()->SpawnActor<ASuperTaller>(ASuperTaller::StaticClass());
 	Ingeniero->SetEstelarBuilder(SuperTaller);
-	Ingeniero->ConstruirEstancia(FVector(-1700.0f, 700.0f, 215.0f));
+	Ingeniero->ConstruirEstancia(FVector(-1100.0f, -800.0f, 215.0f));
 
 	AEstancia* Estancia = Ingeniero->GetEstancia();
 	Estancia->CaracteristicasEstancia();
 
-	FVector ubicacionInicioNavesEnemigasCaza = FVector(0.0f, -500.0f, 200.0f);
+	FVector ubicacionInicioNavesEnemigasCaza = FVector(500.0f, -500.0f, 200.0f);
 	FRotator rotacionInicioNavesEnemigasCaza = FRotator(0.0f, 0.0f, 0.0f);
 
-	FVector ubicacionInicioNavesEnemigasTransporte = FVector(300.0f, -500.0f, 200.0f);
+	FVector ubicacionInicioNavesEnemigasTransporte = FVector(800.0f, -500.0f, 200.0f);
 	FRotator rotacionInicioNavesEnemigasTransporte = FRotator(0.0f, 0.0f, 0.0f);
 
 	FVector ubicacionInicioNavesAmigas = FVector(-1000.0f, -1000.0f, 200.0f);
@@ -81,8 +88,7 @@ void APrimerParcialGalagaGameMode::BeginPlay()
 			NavesEnemigas.Push(NaveEnemigaTemporal);
 		}
 
-
-		for (int i = 0; i < 10; i++)
+		/*for (int i = 0; i < 10; i++)
 		{
 			ubicacionInicioNavesAmigas = ubicacionInicioNavesAmigas + FVector(0.0f, 200.0f, 0.0f);
 			ANaveAmiga* NaveAmigaTemporal = World->SpawnActor<ANaveAmiga>(ubicacionInicioNavesAmigas, rotacionInicioNavesAmigas);
@@ -105,7 +111,7 @@ void APrimerParcialGalagaGameMode::BeginPlay()
 			ubicacionInicioNavesAmigas = ubicacionInicioNavesAmigas + FVector(0.0f, 200.0f, 0.0f);
 			ANaveAmiga* NaveAmigaTemporal = World->SpawnActor<ANaveAmiga>(ubicacionInicioNavesAmigas, rotacionInicioNavesAmigas);
 			NavesAmigas.Push(NaveAmigaTemporal);
-		}
+		}*/
 	}
 }
 

@@ -2,6 +2,8 @@
 
 
 #include "Estancia.h"
+#include "CapsulaVelocidad.h"
+#include "MunicionTorre.h"
 
 // Sets default values
 AEstancia::AEstancia()
@@ -11,6 +13,7 @@ AEstancia::AEstancia()
 	MeshEdificio = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshEdificio"));
 	MeshEdificio->SetupAttachment(RootComponent);
 	RootComponent = MeshEdificio;
+	SetActorScale3D(FVector(3.0f, 3.0f, 3.0f));
 }
 
 // Called when the game starts or when spawned
@@ -24,12 +27,21 @@ void AEstancia::BeginPlay()
 void AEstancia::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (Municion)
+	{
+		TiempoTranscurrido++;
+		if (TiempoTranscurrido > 10)
+		{
+			MunicionTorre = GetWorld()->SpawnActor<AMunicionTorre>(GetActorLocation(), FRotator::ZeroRotator);
+			TiempoTranscurrido = 0;
+		}
+	}
 }
 
 void AEstancia::SetTaller(FString MiTaller)
 {
 	Taller = MiTaller;
+	CapsulaVelocidad = GetWorld()->SpawnActor<ACapsulaVelocidad>(GetActorLocation() + FVector(200.0f, 0.0f, 0.0f), FRotator::ZeroRotator);
 }
 
 void AEstancia::SetMesh(UStaticMeshComponent* MiMeshEdificio)
@@ -40,6 +52,12 @@ void AEstancia::SetMesh(UStaticMeshComponent* MiMeshEdificio)
 void AEstancia::SetCuarto(FString MiCuarto)
 {
 	Cuarto = MiCuarto;
+}
+
+void AEstancia::SetTorre(FString MiTorre)
+{
+	Torre = MiTorre;
+	Municion = true;
 }
 
 void AEstancia::CaracteristicasEstancia()

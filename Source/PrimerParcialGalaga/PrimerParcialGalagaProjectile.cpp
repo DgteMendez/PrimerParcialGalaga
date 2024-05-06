@@ -40,6 +40,5 @@ void APrimerParcialGalagaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor*
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
-
 	Destroy();
 }

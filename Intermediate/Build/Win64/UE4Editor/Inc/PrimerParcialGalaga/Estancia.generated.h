@@ -62,7 +62,8 @@ public: \
 
 #define PrimerParcialGalaga_Source_PrimerParcialGalaga_Estancia_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Taller() { return STRUCT_OFFSET(AEstancia, Taller); } \
-	FORCEINLINE static uint32 __PPO__Cuarto() { return STRUCT_OFFSET(AEstancia, Cuarto); }
+	FORCEINLINE static uint32 __PPO__Cuarto() { return STRUCT_OFFSET(AEstancia, Cuarto); } \
+	FORCEINLINE static uint32 __PPO__Torre() { return STRUCT_OFFSET(AEstancia, Torre); }
 
 
 #define PrimerParcialGalaga_Source_PrimerParcialGalaga_Estancia_h_10_PROLOG

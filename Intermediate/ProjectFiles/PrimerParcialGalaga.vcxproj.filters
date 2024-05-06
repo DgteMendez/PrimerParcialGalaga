@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PrimerParcialGalaga.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F24A18EB-9B9D-4197-BE44-38D9F93994EC}</UniqueIdentifier>
+      <UniqueIdentifier>{14EC1166-F1BB-4A06-8ECD-3CD63D128ACB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PrimerParcialGalaga.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6566BCB5-DA9F-4F52-A31E-011A61852E9E}</UniqueIdentifier>
+      <UniqueIdentifier>{FEA0CF8A-9740-4256-8C33-E25C8C5E4481}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PrimerParcialGalaga">
-      <UniqueIdentifier>{09D239C9-F61C-4FE1-B9BD-7809C613B407}</UniqueIdentifier>
+      <UniqueIdentifier>{621B85DE-AA1E-440B-9D35-4EAFEE61FCA0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PrimerParcialGalaga\Bomba.cpp">
       <Filter>Source\PrimerParcialGalaga</Filter>
@@ -98,6 +98,12 @@
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PrimerParcialGalaga\Inventario.h">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PrimerParcialGalaga\MunicionTorre.cpp">
+      <Filter>Source\PrimerParcialGalaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PrimerParcialGalaga\MunicionTorre.h">
       <Filter>Source\PrimerParcialGalaga</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PrimerParcialGalaga\NaveAmiga.cpp">

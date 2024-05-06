@@ -13,7 +13,7 @@ UCLASS()
 class PRIMERPARCIALGALAGA_API ASuperTaller : public AActor, public IEstelarBuilder
 {
 	GENERATED_BODY()
-	
+
 public:	
 	// Sets default values for this actor's properties
 	ASuperTaller();
@@ -29,8 +29,9 @@ public:
 	virtual void BuildEstancia(FVector UbiEstans) override;
 	virtual void BuildTaller() override;
 	virtual void BuildCuarto() override;
+	virtual void BuildTorre() override;
 	virtual void BuildMesh() override;
-	class UStaticMesh* Taller = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	class UStaticMesh* Taller = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/ASETS/TORRES/TORRE2/afc351fbf65e_torre_del_ejercito_.afc351fbf65e_torre_del_ejercito_'"));
 	virtual class AEstancia * GetEstancia() override;
 	AEstancia* Estancia;
 };

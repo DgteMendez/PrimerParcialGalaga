@@ -45,6 +45,12 @@ void ATallerMejorasEnergiaBuilder::BuildCuarto()
 	Estancia->SetCuarto("Cuarto");*/
 }
 
+void ATallerMejorasEnergiaBuilder::BuildTorre()
+{
+	/*if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTorre():Lodging is NULL, make sure it's initialized.")); return; }
+	Estancia->SetTorre("TorreDeDefensa");*/
+}
+
 void ATallerMejorasEnergiaBuilder::BuildMesh()
 {
 	Estancia->MeshEdificio->SetStaticMesh(Taller);
@@ -55,4 +61,3 @@ AEstancia* ATallerMejorasEnergiaBuilder::GetEstancia()
 {
 	return Estancia;
 }
-

@@ -17,11 +17,20 @@ public:
 	AEstancia();
 
 private:
+	float TiempoTranscurrido = 0;
+	bool Municion = false;
+
+private:
 
 	UPROPERTY(VisibleAnywhere, Category = "Estancia")
 	FString Taller;
 	UPROPERTY(VisibleAnywhere, Category = "Estancia")
 	FString Cuarto;
+	UPROPERTY(VisibleAnywhere, Category = "Estancia")
+	FString Torre;
+
+	class ACapsulaVelocidad* CapsulaVelocidad;
+	class AMunicionTorre* MunicionTorre;
 
 public:
 	UPROPERTY(VisibleAnywhere, Category = "Estancia")
@@ -36,7 +45,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void SetTaller(FString MiTaller);
-	void SetMesh(UStaticMeshComponent* MiMeshEdificio);
 	void SetCuarto(FString MiCuarto);
+	void SetTorre(FString MiTorre);
+	void SetMesh(UStaticMeshComponent* MiMeshEdificio);
 	void CaracteristicasEstancia();
 };

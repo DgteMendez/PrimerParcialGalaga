@@ -28,9 +28,10 @@ public:
 
 	virtual void BuildEstancia(FVector UbiEstans) override;
 	virtual void BuildTaller() override;
-	virtual void BuildMesh() override;
-	class UStaticMesh* Cuarto = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 	virtual void BuildCuarto() override;
+	virtual void BuildTorre() override;
+	virtual void BuildMesh() override;
+	class UStaticMesh* Cuarto = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/ASETS/TALLERES/TALLER1/8f99b18477bf_casas_para_mejorar_.8f99b18477bf_casas_para_mejorar_'"));
 	virtual class AEstancia* GetEstancia() override;
 	AEstancia* Estancia;
 };

@@ -29,8 +29,9 @@ public:
 	virtual void BuildEstancia(FVector UbiEstans) override;
 	virtual void BuildTaller() override;
 	virtual void BuildCuarto() override;
+	virtual void BuildTorre() override;
 	virtual void BuildMesh() override;
-	class UStaticMesh* Taller = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	class UStaticMesh* Taller = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/ASETS/TORRES/TORRE1/ecc1458cd8e6_torre_del_ejercito_.ecc1458cd8e6_torre_del_ejercito_'"));
 	virtual class AEstancia * GetEstancia() override;
 	AEstancia* Estancia;
 

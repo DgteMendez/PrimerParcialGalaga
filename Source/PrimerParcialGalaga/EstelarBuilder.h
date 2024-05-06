@@ -24,7 +24,8 @@ class PRIMERPARCIALGALAGA_API IEstelarBuilder
 public:
 	virtual void BuildEstancia(FVector UbiEstans) = 0;
 	virtual void BuildTaller() = 0;
-	virtual void BuildMesh() = 0;
 	virtual void BuildCuarto() = 0;
+	virtual void BuildTorre() = 0;
+	virtual void BuildMesh() = 0;
 	virtual class AEstancia* GetEstancia() = 0;
 };

@@ -2,7 +2,6 @@
 
 
 #include "CuartoCapsularBuilder.h"
-#include "CapsulaVelocidad.h"
 #include "Estancia.h"
 
 // Sets default values
@@ -40,23 +39,22 @@ void ACuartoCapsularBuilder::BuildTaller()
 	Estancia->SetTaller("Taller");*/
 }
 
-void ACuartoCapsularBuilder::BuildMesh()
-{
-	Estancia->MeshEdificio->SetStaticMesh(Cuarto);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("MeshTaller"));
-}
-
 void ACuartoCapsularBuilder::BuildCuarto()
 {
 	if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildCuarto():Lodging is NULL, make sure it's initialized.")); return; }
 	Estancia->SetCuarto("CuartoDeCapsulas");
-	UWorld* const World = GetWorld();
-	if (World!=nullptr)
-	{
-		FVector ubicacionCapsula = FVector(-1100.0f, 1300.0f, 215.0f) - FVector(100.0f, 0.0f, 0.0f);
-		World->SpawnActor<ACapsulaVelocidad>(ubicacionCapsula, FRotator::ZeroRotator);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Se creo la capsula"));
-	}
+}
+
+void ACuartoCapsularBuilder::BuildTorre()
+{
+	/*if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTorre():Lodging is NULL, make sure it's initialized.")); return; }
+	Estancia->SetTorre("TorreDeDefensa");*/
+}
+
+void ACuartoCapsularBuilder::BuildMesh()
+{
+	Estancia->MeshEdificio->SetStaticMesh(Cuarto);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("MeshTaller"));
 }
 
 AEstancia* ACuartoCapsularBuilder::GetEstancia()

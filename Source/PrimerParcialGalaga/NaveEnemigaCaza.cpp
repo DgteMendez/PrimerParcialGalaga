@@ -7,7 +7,7 @@
 ANaveEnemigaCaza::ANaveEnemigaCaza()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> NaveEnemigaCazaMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_TriPyramid.Shape_TriPyramid'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> NaveEnemigaCazaMesh(TEXT("StaticMesh'/Game/ASETS/NAVES/NAVECAZA1/6ab3950fec4f_una_bala_futurista_.6ab3950fec4f_una_bala_futurista_'"));
 	NaveEnemigaMesh->SetStaticMesh(NaveEnemigaCazaMesh.Object);
 }
 

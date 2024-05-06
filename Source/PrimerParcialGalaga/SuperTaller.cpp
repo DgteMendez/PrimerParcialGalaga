@@ -2,6 +2,7 @@
 
 
 #include "SuperTaller.h"
+#include "MunicionTorre.h"
 #include "Estancia.h"
 
 // Sets default values
@@ -23,7 +24,8 @@ void ASuperTaller::BeginPlay()
 void ASuperTaller::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
+	
 }
 
 void ASuperTaller::BuildEstancia(FVector UbiEstans)
@@ -41,8 +43,14 @@ void ASuperTaller::BuildTaller()
 
 void ASuperTaller::BuildCuarto()
 {
-	if (!Estancia) {UE_LOG(LogTemp, Error, TEXT("BuildTallerReparaciones():Lodging is NULL, make sure it's initialized.")); return; }
+	if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTallerReparaciones():Lodging is NULL, make sure it's initialized.")); return; }
 	Estancia->SetCuarto("AlmacenGeneral");
+}
+
+void ASuperTaller::BuildTorre()
+{
+	if (!Estancia) { UE_LOG(LogTemp, Error, TEXT("BuildTorre():Lodging is NULL, make sure it's initialized.")); return; }
+	Estancia->SetTorre("TorreDeDefensa");
 }
 
 void ASuperTaller::BuildMesh()

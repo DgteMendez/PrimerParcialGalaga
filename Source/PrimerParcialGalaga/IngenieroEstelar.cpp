@@ -57,6 +57,7 @@ void AIngenieroEstelar::ConstruirEstancia(FVector UbicacionEstancia)
 
 	EstelarBuilder->BuildEstancia(UbicacionEstancia);
 	EstelarBuilder->BuildTaller();
-	EstelarBuilder->BuildMesh();
 	EstelarBuilder->BuildCuarto();
+	EstelarBuilder->BuildTorre();
+	EstelarBuilder->BuildMesh();
 }

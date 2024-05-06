@@ -23,6 +23,7 @@ class PRIMERPARCIALGALAGA_API ICentroEstelar
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	virtual void SetTaller(FString Taller) = 0;
-	virtual void SetMesh(UStaticMeshComponent* MeshEdificio) = 0;
 	virtual void SetCuarto(FString Cuarto) = 0;
+	virtual void SetTorre(FString Torre) = 0;
+	virtual void SetMesh(UStaticMeshComponent* MeshEdificio) = 0;
 };

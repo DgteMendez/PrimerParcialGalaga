@@ -42,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeEstancia() {}
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Cuarto;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Torre_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Torre;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshEdificio_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshEdificio;
@@ -75,6 +79,13 @@ void EmptyLinkFunctionForGeneratedCodeEstancia() {}
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AEstancia_Statics::NewProp_Cuarto = { "Cuarto", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEstancia, Cuarto), METADATA_PARAMS(Z_Construct_UClass_AEstancia_Statics::NewProp_Cuarto_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEstancia_Statics::NewProp_Cuarto_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEstancia_Statics::NewProp_Torre_MetaData[] = {
+		{ "Category", "Estancia" },
+		{ "ModuleRelativePath", "Estancia.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AEstancia_Statics::NewProp_Torre = { "Torre", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEstancia, Torre), METADATA_PARAMS(Z_Construct_UClass_AEstancia_Statics::NewProp_Torre_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEstancia_Statics::NewProp_Torre_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEstancia_Statics::NewProp_MeshEdificio_MetaData[] = {
 		{ "Category", "Estancia" },
 		{ "EditInline", "true" },
@@ -85,6 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeEstancia() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEstancia_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEstancia_Statics::NewProp_Taller,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEstancia_Statics::NewProp_Cuarto,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEstancia_Statics::NewProp_Torre,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEstancia_Statics::NewProp_MeshEdificio,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AEstancia_Statics::InterfaceParams[] = {
@@ -117,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeEstancia() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEstancia, 1307480102);
+	IMPLEMENT_CLASS(AEstancia, 4119810559);
 	template<> PRIMERPARCIALGALAGA_API UClass* StaticClass<AEstancia>()
 	{
 		return AEstancia::StaticClass();

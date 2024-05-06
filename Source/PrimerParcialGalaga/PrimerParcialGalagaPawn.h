@@ -94,4 +94,3 @@ public:
 		HitNormal, FVector NormalImpulse, const FHitResult&
 		Hit) override;
 };
-
